@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="585182235">
+    <data-source source="LOCAL" name="Django default" uuid="b0bb1571-e8fd-4773-8da0-bf7591b99f57">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/akademik_db</jdbc-url>
+      <user-name>dzikri</user-name>
+      <user-password>dfc8dfc3dfd9dfc7dfc3dfc6dfc6dfcbdfc2</user-password>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+
