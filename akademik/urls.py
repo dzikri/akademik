@@ -6,5 +6,5 @@ urlpatterns = patterns('',
     # url(r'^$', 'akademik.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
     (r'^grappelli/', include('grappelli.urls')),
-    url(r'^admin/', include(admin.site.urls)),
+    url(r'^login/', include(admin.site.urls)),
 )

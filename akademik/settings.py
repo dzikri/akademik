@@ -14,6 +14,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 TEMPLATE_DIRS = (
     os.path.join(BASE_DIR, 'templates/'),
 )
+
+ADMINS = (
+    ('Dzikri', 'dzikers@gmail.com'),
+)
+
 #STATICFILES_DIRS = (
     #os.path.join(BASE_DIR, 'static_files/'),
     #('gumby_css', os.path.join(BASE_DIR, 'components/css/')),
@@ -48,6 +53,18 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'debug_toolbar',
+    #aplikasi internal
+    'apps.absensi',
+    'apps.pegawai',
+    'apps.siswa',
+    'apps.alumni',
+    'apps.ortu',
+    'apps.penilaian',
+    'apps.rpp',
+    'apps.pengguna',
+    'apps.laporan',
+    'apps.lps',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -58,6 +75,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
@@ -74,7 +92,7 @@ STATICFILES_FINDERS = (
 
 ROOT_URLCONF = 'akademik.urls'
 
-WSGI_APPLICATION = 'akademik.wsgi.application'
+WSGI_APPLICATION = 'apps.wsgi.application'
 
 
 # Database
@@ -113,4 +131,5 @@ STATIC_URL = '/static/'
 
 #GRAPPELLi
 ADMIN_MEDIA_PREFIX = STATIC_URL + "grappelli/",
-GRAPPELLI_ADMIN_TITLE = '<img src="/static/images/logo.png"/ style="height: 30px; margin-left: -10px; margin-top: -8px; margin-bottom: -11px;">'
+GRAPPELLI_ADMIN_TITLE = '<img src="/static/images/siakad.png">'
+#GRAPPELLI_ADMIN_TITLE = '<center>Sistem Informasi Akademik</center>'
