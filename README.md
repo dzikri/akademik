@@ -1,0 +1,1 @@
+Pondasi awal aplikasi
